@@ -1,7 +1,7 @@
 const Joi = require("joi")
 
 const validator = schema =>(req, res, next)=>{
-    const {error} = shema.validate(req.body, {abortEarly: false});
+    const {error} = schema.validate(req.body, {abortEarly: false});
     if(error){
         var message = "";
         for(let key in error.details){

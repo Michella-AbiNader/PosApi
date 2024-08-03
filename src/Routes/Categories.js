@@ -11,7 +11,7 @@ router.post('/api/categories', tryCatch((req, res)=>{
     });
 }));
 
-router.get('api/categories', tryCatch((req, res)=>{
+router.get('/api/categories', tryCatch((req, res)=>{
     const categories = GetAllCategories();
     return res.status(200).json({
         categories: categories

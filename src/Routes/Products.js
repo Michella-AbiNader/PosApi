@@ -4,7 +4,7 @@ const {tryCatch, tryCatchAsync} = require('../Services/Utils/TryCathc');
 const router = express.Router()
 const {ValidateProducts} = require('../Services/Utils/Validator')
 const sharp = require('sharp')
-const multer = require(multer)
+const multer = require('multer')
 const {CreateProduct} = require('../Services/ProductsServices')
 
 const s = multer.memoryStorage();
